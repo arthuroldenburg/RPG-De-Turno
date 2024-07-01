@@ -1,20 +1,20 @@
 package Caracters;
 
-public class Archer extends Caracters{
-    protected int dexterity;
+public class Archer extends Characters {
+    protected int criticalChance;
 
     public Archer(){}
 
-    public Archer(String name, int life, int attack, int defense, int dexterity) {
+    public Archer(String name, int life, int attack, int defense, int criticalChance) {
         super(name, life, attack, defense);
-        this.dexterity = dexterity;
+        this.criticalChance = criticalChance;
     }
 
-    public int getDexterity() {
-        return dexterity;
+    public int getCriticalChance() {
+        return criticalChance;
     }
 
-    public void setDexterity(int dexterity) {
-        this.dexterity = dexterity;
+    public void setCriticalChance(int criticalChance) {
+        this.criticalChance = criticalChance;
     }
 }
